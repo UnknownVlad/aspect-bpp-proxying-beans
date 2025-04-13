@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Аннотация для аспекта, которая работает ДО выполнения метода
+ * Аннотация для аспекта, которая работает ДО выполнения метода, для параметра
  */
 @Target(ElementType.PARAMETER)
 @Retention(RetentionPolicy.RUNTIME)
