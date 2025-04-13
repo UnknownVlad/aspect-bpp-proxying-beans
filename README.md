@@ -1,0 +1,1 @@
+aspect-bpp-proxying-beans
