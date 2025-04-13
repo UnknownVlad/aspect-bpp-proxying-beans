@@ -3,13 +3,14 @@ package org.example.aspectbppproxyingbeans.aspects.testcomponents.param;
 import org.example.aspectbppproxyingbeans.AspectBppProxyingBeansApplicationTests;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ActiveProfiles;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+@ActiveProfiles("custom-test")
 class BeforeExecutionParamTestClassTest extends AspectBppProxyingBeansApplicationTests {
 
     @Autowired
     private BeforeExecutionParamTestClass testClass;
+
     @Test
     void testMethod() {
         testClass.testMethod(

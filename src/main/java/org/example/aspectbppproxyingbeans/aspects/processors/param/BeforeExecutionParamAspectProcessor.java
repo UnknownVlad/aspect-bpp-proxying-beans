@@ -6,6 +6,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.example.aspectbppproxyingbeans.aspects.annotations.param.AspectBeforeExecutionParam;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.lang.annotation.Annotation;
@@ -15,6 +16,7 @@ import java.lang.reflect.Parameter;
 @Slf4j
 @Aspect
 @Component
+@Profile("custom-test")
 public class BeforeExecutionParamAspectProcessor {
 
     @Before("execution(* org.example.aspectbppproxyingbeans..*(..))")
